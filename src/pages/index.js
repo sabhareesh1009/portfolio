@@ -6,6 +6,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../public/images/profile/developer_pic_1.png";
+import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 export default function Home() {
   return (
     <>
@@ -41,11 +42,13 @@ export default function Home() {
                   className="flex items-center bg-dark text-light p-2.5 px-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark"
                 >
                   Resume
-                  <LinkArrow className="w-6 ml-1"/>
+                  <LinkArrow className="w-6 ml-1" />
                 </Link>
-                <Link href="mailto:sabhareeshkandikonda1109@gmail.com"
-                className="ml-4 text-lg font-medium capitalize text-dark underline"
-                  target="_blank">
+                <Link
+                  href="mailto:sabhareeshkandikonda1109@gmail.com"
+                  className="ml-4 text-lg font-medium capitalize text-dark underline"
+                  target="_blank"
+                >
                   Contact
                 </Link>
               </div>
@@ -53,6 +56,9 @@ export default function Home() {
           </div>
         </Layout>
         <HireMe />
+        <div className="absolute right-8 bottom-8 inline-block w-24">
+          <Image src={lightBulb} alt="sabhareesh" className="w-full h-auto" />
+        </div>
       </main>
     </>
   );
