@@ -1,6 +1,8 @@
 import AnimatedNumbers from "@/components/AnimatedNumbers";
 import AnimatedText from "@/components/AnimatedText";
+import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
+import Skills from "@/components/Skills";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
@@ -10,8 +12,8 @@ const about = () => {
   return (
     <>
       <Head>
-        <title>Sabhareesh | About page</title>
-        <meta name="sabhareesh kandikonda" content="about me" />
+        <title>Sabhareesh Kandikonda| About page</title>
+        <meta name="sabhareesh kandikonda" content="about page" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
@@ -77,6 +79,8 @@ const about = () => {
               </div>
             </div>
           </div>
+          <Skills />
+          <Experience />
         </Layout>
       </main>
     </>
