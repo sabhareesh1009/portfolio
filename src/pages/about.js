@@ -1,18 +1,19 @@
 import AnimatedNumbers from "@/components/AnimatedNumbers";
 import AnimatedText from "@/components/AnimatedText";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/developer_pic_2.png";
 
 const about = () => {
   return (
     <>
       <Head>
-        <title>Sabhareesh Kandikonda| About page</title>
+        <title>Sabhareesh Kandikonda | About page</title>
         <meta name="sabhareesh kandikonda" content="about page" />
       </Head>
       <main className="flex w-full flex-col items-center justify-center">
@@ -31,14 +32,15 @@ const about = () => {
                 innovative products.
               </p>
               <p className="my-4 font-medium">
-                As a frontend engineer and skilled full-stack developer, I
-                believe that the user experience is key. I specialize in
-                creating responsive, accessible, and visually appealing
-                interfaces that not only look great but are also intuitive and
-                easy to use. In addition to my frontend expertise, I have
-                experience working on both the client and server sides of
-                applications, and am proficient in backend technologies such as
-                Node.js and Express.
+                As a frontend engineer, I believe that the user experience is
+                key. I specialize in creating responsive, accessible, and
+                visually appealing interfaces that not only look great but are
+                also intuitive and easy to use.
+              </p>
+              <p className="my-4 font-medium">
+                In addition to my frontend expertise, I have experience working
+                on both the client and server sides of applications, and am
+                proficient in backend technologies such as Node.js and Express.
               </p>
               <p className="font-medium">
                 But what truly sets me apart is my passion for coding. I am
@@ -55,24 +57,32 @@ const about = () => {
                 alt="sabhareesh"
                 className="w-full h-auto rounded-2xl"
               />
-            </div>
-            <div className="col-span-2 flex flex-col items-end justify-between">
+            </div>  
+            <div className="col-span-2 flex flex-col h-[75%] items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">
-                  <AnimatedNumbers value={50} />+
+                  {" "}
+                  <AnimatedNumbers value={20} />+
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  projects completed
+                </h2>
+              </div>
+
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={15} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   satisfied clients
                 </h2>
               </div>
+
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"> <AnimatedNumbers value={40} />+</span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
-                  projects completed
-                </h2>
-              </div>
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"> <AnimatedNumbers value={4} />+</span>
+                <span className="inline-block text-7xl font-bold">
+                  {" "}
+                  <AnimatedNumbers value={4} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   years of experience
                 </h2>
@@ -81,6 +91,7 @@ const about = () => {
           </div>
           <Skills />
           <Experience />
+          <Education />
         </Layout>
       </main>
     </>

@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 
 const quote = {
   initial: {
-    opacity: 1,
+    opacity: 0.5,
   },
   animate: {
     opacity: 1,
     transition: {
       delay: 0.5,
-      staggerChildren: 0.08,
+      staggerChildren: 1,
     },
   },
 };
