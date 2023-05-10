@@ -35,7 +35,7 @@ const Skills = () => {
         <Skill name="Angular" x="15vw" y="-12vw" />
         <Skill name="GastsbyJs" x="32vw" y="-5vw" />
         <Skill name="NodeJs" x="0vw" y="-20vw" />
-        <Skill name="Tailwind CSS" x="18vw" y="18vw" />
+        <Skill name="Tailwind CSS" x="16vw" y="18vw" />
       </div>
     </>
   );
