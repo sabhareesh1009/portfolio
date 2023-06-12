@@ -16,12 +16,12 @@ const about = () => {
         <title>Sabhareesh Kandikonda | About page</title>
         <meta name="sabhareesh kandikonda" content="about page" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light ">
         <Layout className="pt-16">
           <AnimatedText text="explore, learn and hustle!" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 About me
               </h2>
               <p className="font-medium">
