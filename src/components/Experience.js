@@ -56,9 +56,7 @@ const Experience = () => {
             companyLink="https://gupshup.io"
             time="2022-present"
             address="Bengalore, India"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            work="working as a Frontend engineer and building fantastic products using Next.js and React.js and enriching the customer experience of conversational messaging platforms"
           />
           <Details
             position="Software Engineer"
@@ -66,9 +64,7 @@ developing new tools for data analysis and visualization."
             companyLink="https://partanalytics.com/"
             time="2021-2022"
             address="Bengalore, India"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            work="Built the awesome supplier chain SaaS product end to end which enriches customers' data and provides a platform for managing commodity spend by supplier, commodity type, business, or product including actionable insights on cost and risk reduction opportunities and worked as a Frontend engineer by developing a beautiful UI using React.js"
           />
           <Details
             position="Systems Engineer"
@@ -76,9 +72,7 @@ developing new tools for data analysis and visualization."
             companyLink="https://www.infosys.com"
             time="2019-2021"
             address="Bengalore, India"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            work=""
           />
         </ul>
       </div>

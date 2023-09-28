@@ -37,7 +37,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
-                  href="/dummy.pdf"
+                  href="https://drive.google.com/file/d/1ZpmIBi3t48TzU6n60nFitZom1yhuK0AY/view?usp=drive_link"
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-5 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark
                   

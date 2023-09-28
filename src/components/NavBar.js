@@ -51,7 +51,7 @@ const NavBar = () => {
           <TwitterIcon />
         </motion.a>
         <motion.a
-          href="https://twitter.com"
+          href="https://www.linkedin.com/in/sabhareesh-kandikonda-4ab701194/"
           target="_blank"
           className="w-6 mx-3"
           whileHover={{ y: -2 }}
@@ -60,7 +60,7 @@ const NavBar = () => {
           <LinkedInIcon />
         </motion.a>
         <motion.a
-          href="https://twitter.com"
+          href="https://github.com/sabhareesh1009"
           target="_blank"
           className="w-6 ml-3"
           whileHover={{ y: -2 }}

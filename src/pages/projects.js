@@ -96,57 +96,50 @@ const projects = () => {
             text="Imagination Trumps Knowledge!"
             className="mb-16"
           />
-
           <div className="grid grid-cols-12 gap-24 gap-y-32">
             <div className="col-span-12">
               <FeaturedProject
-                title="Crypto Screener Application"
+                title="Box Office App"
+                link={"https://box-office-5e075.web.app/"}
+                type="Featured Project"
+                img={projectImage1}
+                github="https://github.com/sabhareesh1009/Box-Office-App"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="Gmail App Clone"
+                link={"https://clone-ff40a.web.app/"}
+                img={projectImage1}
+                github="https://github.com/sabhareesh1009/gmail-app"
+              />
+            </div>
+            <div className="col-span-6">
+              <Project
+                title="LinkedIn App clone"
+                link={"https://linkedin-clone-91491.web.app/"}
+                img={projectImage1}
+                github="https://github.com/sabhareesh1009/linkedin-app"
+              />
+            </div>
+            
+            <div className="col-span-6">
+              {""}
+              <Project
+                title="Porfolio"
                 link={"/"}
                 type="Featured Project"
                 img={projectImage1}
-                github="/"
+                github="https://github.com/sabhareesh1009/portfolio"
               />
             </div>
+           
             <div className="col-span-6">
               <Project
-                title="Crypto Screener Application"
-                link={"/"}
+                title="Crazy shop"
+                link={"https://crazy-shop-51b5f.web.app/"}
                 img={projectImage1}
-                github="/"
-              />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Crypto Screener Application"
-                link={"/"}
-                img={projectImage1}
-                github="/"
-              />
-            </div>
-            <div className="col-span-12">
-              {" "}
-              <FeaturedProject
-                title="Crypto Screener Application"
-                link={"/"}
-                type="Featured Project"
-                img={projectImage1}
-                github="/"
-              />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Crypto Screener Application"
-                link={"/"}
-                img={projectImage1}
-                github="/"
-              />
-            </div>
-            <div className="col-span-6">
-              <Project
-                title="Crypto Screener Application"
-                link={"/"}
-                img={projectImage1}
-                github="/"
+                github="https://github.com/sabhareesh1009/crazy-shop"
               />
             </div>
           </div>
