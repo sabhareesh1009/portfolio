@@ -5,7 +5,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { GithubIcon } from "@/components/Icons";
-import projectImage1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import projectImage1 from "../../public/images/projects/linkedIn-img.png";
+import boxOfficeImg from "../../public/images/projects/box-office.png";
+import portfolioImg from "../../public/images/projects/portfolio-img.png";
+import linkedInImg from "../../public/images/projects/linkedIn-img.png";
+import crazyShopImg from "../../public/images/projects/crazy-shop-img.png";
+import gmailImg from "../../public/images/projects/gmail-img.png";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -102,7 +107,7 @@ const projects = () => {
                 title="Box Office App"
                 link={"https://box-office-5e075.web.app/"}
                 type="Featured Project"
-                img={projectImage1}
+                img={boxOfficeImg}
                 github="https://github.com/sabhareesh1009/Box-Office-App"
               />
             </div>
@@ -110,7 +115,7 @@ const projects = () => {
               <Project
                 title="Gmail App Clone"
                 link={"https://clone-ff40a.web.app/"}
-                img={projectImage1}
+                img={gmailImg}
                 github="https://github.com/sabhareesh1009/gmail-app"
               />
             </div>
@@ -118,27 +123,26 @@ const projects = () => {
               <Project
                 title="LinkedIn App clone"
                 link={"https://linkedin-clone-91491.web.app/"}
-                img={projectImage1}
+                img={linkedInImg}
                 github="https://github.com/sabhareesh1009/linkedin-app"
               />
             </div>
-            
+
             <div className="col-span-6">
               {""}
               <Project
                 title="Porfolio"
                 link={"/"}
-                type="Featured Project"
-                img={projectImage1}
+                img={portfolioImg}
                 github="https://github.com/sabhareesh1009/portfolio"
               />
             </div>
-           
+
             <div className="col-span-6">
               <Project
                 title="Crazy shop"
                 link={"https://crazy-shop-51b5f.web.app/"}
-                img={projectImage1}
+                img={crazyShopImg}
                 github="https://github.com/sabhareesh1009/crazy-shop"
               />
             </div>
