@@ -161,7 +161,12 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            {/* <CustomLink href="/articles" title="Articles" className="ml-4" /> */}
+            {/* <CustomLink
+              href="/articles"
+              title="Articles"
+              className=""
+              toggle={handleClick}
+            /> */}
           </nav>
           <nav className="flex items-center justify-center fle-wrap mt-2">
             <motion.a

@@ -8,13 +8,14 @@ import React, { useRef } from "react";
 import articleImage1 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import articleImage2 from "../../public/images/articles/pagination component in reactjs.jpg";
 import articleImage3 from "../../public/images/articles/smooth scrolling in reactjs.png";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
-      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark dark:bg-dark dark:border-light rounded-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
       <Link
         href={link}
         tabIndex="_blank"
@@ -32,12 +33,14 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
       </Link>
 
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 mt-4 hover:underline xs:text-lg dark:text-light">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <p className="text-sm mb-2 dark:text-light">{summary}</p>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time}
+      </span>
     </li>
   );
 };
@@ -76,7 +79,7 @@ const MovingImg = ({ title, img, link }) => {
         whileInView={{ opacity: 1, transition: { duration: 0.2 } }}
         src={img}
         alt={title}
-        className="z-10 w-96 h-auto hidden absolute rounded-lg"
+        className="z-10 w-96 h-auto hidden absolute rounded-lg md:!hidden"
       />
     </Link>
   );
@@ -88,10 +91,12 @@ const Article = ({ img, title, date, link }) => {
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
       viewport={{ once: true }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark dark:bg-dark dark:text-light dark:border-light border-r-4 border-b-4 sm:flex-col"
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold  pl-4">{date}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold  pl-4 sm:self-start sm:pl-0 xs:text-sm">
+        {date}
+      </span>
     </motion.li>
   );
 };
@@ -103,12 +108,16 @@ const articles = () => {
         <title>Sabhareesh Kandikonda | Articles page</title>
         <meta name="sabhareesh kandikonda" content="articles page" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
         <Layout className="pt-16">
-          <AnimatedText text="Words can changes the world!" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText
+            text="Words can changes the world!"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+          <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:gap-y-16 md:grid-cols-1">
             <FeaturedArticle
-              img={articleImage1}
+              img={articleImage1} 
               title="Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
               summary="reating Stunning Loading Screens In React: Build 3 Types Of Loading Screens
            Learn how to create stunning loading screens in React with 3 different methods. 
@@ -127,7 +136,7 @@ const articles = () => {
             />
           </ul>
 
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32 dark:text-light">
             All Articles
           </h2>
 

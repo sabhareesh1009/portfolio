@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../public/images/profile/developer_pic_1.png";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
+import TransitionEffect from "@/components/TransitionEffect";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
         <title>Sabhareesh Kandikonda | Home</title>
         <meta name="Porfolio" content="sabhareesh portfoilo home page" />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">

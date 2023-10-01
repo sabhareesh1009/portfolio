@@ -19,7 +19,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           <a
             href={companyLink}
             target="_blank"
-            className="text-primary capitalize"
+            className="text-primary dark:text-primaryDark capitalize"
           >
             @{company}
           </a>

@@ -16,7 +16,7 @@ const Details = ({ type, college, time, address }) => {
       >
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {type}&nbsp;{" "}
-          <span className="text-primary capitalize">{college}</span>
+          <span className="text-primary dark:text-primaryDark capitalize">{college}</span>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
