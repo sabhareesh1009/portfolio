@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>Sabhareesh Kandikonda | Home</title>
         <meta name="Porfolio" content="sabhareesh portfoilo home page" />
+        
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">

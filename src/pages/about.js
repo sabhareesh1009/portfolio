@@ -25,29 +25,20 @@ const about = () => {
                 About me
               </h2>
               <p className="font-medium">
-                Hi, I'm Sabhareesh Kandikonda, a Software Engineer and
-                Frontend/Fullstack developer. I am passionate about coding and
-                have a knack for problem-solving. Over the course of my career,
-                I have had the opportunity to work on a range of interesting and
-                innovative products.
+                Hello, I'm Sabhareesh Kandikonda, a Software Engineer and
+                Frontend/Fullstack developer with over 5 years of experience.
               </p>
               <p className="my-4 font-medium">
-                As a frontend engineer, I believe that the user experience is
-                key. I specialize in creating responsive, accessible, and
-                visually appealing interfaces that not only look great but are
-                also intuitive and easy to use.
+                My expertise lies in Javascript, React.js, and Next.js. I've had
+                the privilege of spearheading numerous projects from inception,
+                ensuring exceptional user experiences and optimizing
+                performance.
               </p>
               <p className="my-4 font-medium">
-                In addition to my frontend expertise, I have experience working
-                on both the client and server sides of applications, and am
-                proficient in backend technologies such as Node.js and Express.
-              </p>
-              <p className="font-medium">
-                But what truly sets me apart is my passion for coding. I am
-                always eager to learn and grow, and am constantly seeking out
-                new challenges and opportunities to improve my skills and
-                knowledge. I am dedicated to creating high-quality software that
-                is efficient, effective, and user-friendly.
+                I'm dedicated to crafting efficient, user-friendly software
+                while constantly seeking new challenges to further develop my
+                skills and knowledge. Let's create something exceptional
+                together.
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8">
@@ -57,7 +48,7 @@ const about = () => {
                 alt="sabhareesh"
                 className="w-full h-auto rounded-2xl"
               />
-            </div>  
+            </div>
             <div className="col-span-2 flex flex-col h-[75%] items-end justify-between">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block text-7xl font-bold">

@@ -72,7 +72,8 @@ const Experience = () => {
             companyLink="https://www.infosys.com"
             time="2019-2021"
             address="Bengalore, India"
-            work=""
+            work="Worked as Front End/web developer in a financial development project for client Asian Development Bank, Product called Integrated Disbursement System which is for lending loans, grants, and technical assistance to major firms, countries, and major development projects throughout the globe.
+            and developed from scratch on Front End in Angular 7 with multiple modules and pages which are very high functionalities."
           />
         </ul>
       </div>
