@@ -142,6 +142,24 @@ const NavBar = () => {
       bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32
       "
         >
+          {" "}
+          <button className="absolute top-6 left-3" onClick={handleClick}>
+            <span
+              className={`dark:bg-dark bg-light block transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5 "
+              }`}
+            ></span>
+            <span
+              className={`dark:bg-dark bg-light block transition-all duration-300 tran h-0.5 w-6 rounded-sm my-0.5 ${
+                isOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`dark:bg-dark bg-light block transition-all duration-300 h-0.5 w-6 rounded-sm ${
+                isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5 "
+              }`}
+            ></span>
+          </button>
           <nav className="flex items-center flex-col justify-center">
             <CustomMobileLink
               href="/"
@@ -199,7 +217,7 @@ const NavBar = () => {
 
             <button
               onClick={() => setMode(mode === "light" ? "dark" : "light")}
-              className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+              className={`ml-3 flex items-center justify-center rounded-full p-1 sm:mx-1 ${
                 mode === "light" ? "bg-dark text-light" : "bg-light text-dark"
               }`}
             >
