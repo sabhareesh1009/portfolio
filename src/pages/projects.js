@@ -159,7 +159,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               {""}
               <Project
-                title="Porfolio"
+                title="Portfolio"
                 link={"/"}
                 img={portfolioImg}
                 github="https://github.com/sabhareesh1009/portfolio"
