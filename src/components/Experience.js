@@ -91,7 +91,7 @@ const Experience = () => {
             position="Senior Frontend & AI Engineer (SE III)"
             company="Nextiva"
             companyLink="https://www.nextiva.com"
-            time="July 2025 – April 2026"
+            time="July 2025 – Present"
             address="Bengaluru, India"
             projects="NCX Admin, Next Usage & Billing, Onboarding Journey, Next Platform AI"
             highlights={[
